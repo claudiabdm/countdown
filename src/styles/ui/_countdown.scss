@@ -1,0 +1,83 @@
+
+.countdown {
+  @include size(100%, auto);
+  @include flex(center, center);
+  flex-wrap: wrap;
+  gap: var(--countdown-gap);
+  margin-top: var(--countdown-mt);
+
+  &__unit {
+    margin-top: var(--countdown-units-mt);
+    font-size: var(--font-size-unit);
+    font-weight: 400;
+    letter-spacing: var(--countdown-letter-spacing);
+  }
+
+  &__time {
+    @include flex(center, center, column);
+    position: relative;
+    color: var(--primary-blue);
+    border-radius: var(--countdown-border-radius);
+    overflow: hidden;
+  }
+
+  &__card {
+    @include size(var(--card-size), var(--card-size));
+    @include flex(center, center);
+    position: relative;
+    border-radius: inherit;
+    background: linear-gradient(
+      180deg,
+      hsl(237, 18%, 20%) 50%,
+      var(--neutral-100) 50%
+    );
+    box-shadow: 0 var(--countdown-border-radius) 0 0 var(--neutral-300);
+
+    &::before,
+    &::after {
+      @include size(var(--card-points-size), var(--card-points-size));
+      content: "";
+      display: block;
+      position: absolute;
+      top: var(--card-points-top);
+      border-radius: 50%;
+      background-color: var(--neutral-300);
+      z-index: 1;
+    }
+    &::before {
+      right: var(--card-points-offset);
+    }
+    &::after {
+      left: var(--card-points-offset);
+    }
+  }
+
+  &__digits {
+    @include flex(center, center);
+    @include absolute(0, 0, 0, 0);
+    border-radius: inherit;
+    color: var(--primary-red);
+    font-size: var(--font-size-digits);
+
+    &--top, &--bottom {
+      @include size(100%, 50%);
+      overflow: hidden;
+    }
+
+    &--top {
+      top: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      padding-top: 50%;
+      color: hsl(345, 95%, 68%, 80%);
+      background: hsl(237, 18%, 20%);
+    }
+    &--bottom {
+      top: 50%;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      background: var(--neutral-100);
+      padding-bottom: 50%;
+    }
+  }
+}

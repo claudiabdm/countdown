@@ -1,0 +1,71 @@
+// ---------------- //
+// MIXINS           //
+// ---------------- //
+@import "./mixins/_position";
+@import "./mixins/_display";
+@import "./mixins/_rem";
+@import "./mixins/_size.scss";
+
+// ---------------- //
+// GLOBAL           //
+// ---------------- //
+@import "./global/reset";
+@import "./global/color";
+@import "./global/typography";
+@import "./global/layout";
+
+// ---------------- //
+// UI               //
+// ---------------- //
+@import "./ui/_countdown.scss";
+@import "./ui/_flip-card.scss";
+
+$card-size: rem(70px);
+$card-points-size: rem(6px);
+$card-points-top: rem((70px / 2) - 3px);
+$card-points-offset: rem(-3px);
+$countdown-gap: rem(15px);
+$countdown-units-mt: rem(10px);
+$countdown-border-radius: rem(5px);
+$countdown-mt: rem(57px);
+$title-mt: rem(148px);
+
+:root {
+  --card-size: #{$card-size};
+  --card-points-size: #{$card-points-size};
+  --card-points-top: #{$card-points-top};
+  --card-points-offset: #{$card-points-offset};
+  --countdown-gap: #{$countdown-gap};
+  --countdown-units-mt: #{$countdown-units-mt};
+  --countdown-border-radius: #{$countdown-border-radius};
+  --countdown-mt: #{$countdown-mt};
+  --title-mt: #{$title-mt};
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --card-size: calc(#{$card-size} * 2);
+    --card-points-size: calc(#{$card-points-size} * 2);
+    --card-points-top: calc(#{$card-points-top} * 2);
+    --card-points-offset: calc(#{$card-points-offset} * 2);
+    --countdown-gap: calc(#{$countdown-gap} * 2);
+    --countdown-units-mt: calc(#{$countdown-units-mt} * 2);
+    --countdown-border-radius: calc(#{$countdown-border-radius} * 2);
+    --countdown-mt: calc(#{$countdown-mt});
+    --title-mt: calc(#{$title-mt});
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    --card-size: calc(#{$card-size} * 2);
+    --card-points-size: calc(#{$card-points-size} * 2);
+    --card-points-top: calc(#{$card-points-top} * 2);
+    --card-points-offset: calc(#{$card-points-offset} * 2);
+    --countdown-gap: calc(#{$countdown-gap} * 2.5);
+    --countdown-units-mt: calc(#{$countdown-units-mt} * 2.5);
+    --countdown-border-radius: calc(#{$countdown-border-radius} * 2);
+    --countdown-mt: calc(#{$countdown-mt} * 1.75);
+    --title-mt: calc(#{$title-mt} + 5px);
+  }
+}

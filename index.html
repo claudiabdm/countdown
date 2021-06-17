@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Primary Meta Tags -->
+    <title>Frontend Mentor | Launch countdown timer</title>
+    <meta name="title" content="Frontend Mentor | Launch countdown timer">
+    <meta name="description" content="Launch countdown challenge from Frontend Mentor built with TypeScript, SCSS and Vite made by @claudiabdm.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Frontend Mentor | Launch countdown timer">
+    <meta property="og:description" content="Launch countdown challenge from Frontend Mentor built with TypeScript, SCSS and Vite made by @claudiabdm.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Frontend Mentor | Launch countdown timer">
+    <meta property="twitter:description" content="Launch countdown challenge from Frontend Mentor built with TypeScript, SCSS and Vite made by @claudiabdm.">
+
+  </head>
+
+  <body>
+    <main class="main">
+      <h1 class="main__title">we're launching soon</h1>
+      <section class="main__countdown">
+        <ol
+          class="countdown"
+        >
+          <li class="countdown__time">
+            <div class="countdown__card" id="days">
+              <div class="countdown__digits countdown__digits--top">00</div>
+              <div
+                class="countdown__digits countdown__digits--center flip-card"
+              >
+                <span class="flip-card__bottom"> 00 </span>
+                <span class="flip-card__top"> 00 </span>
+              </div>
+              <div class="countdown__digits countdown__digits--bottom">00</div>
+            </div>
+            <div class="countdown__unit">days</div>
+          </li>
+          <li class="countdown__time">
+            <div class="countdown__card" id="hours">
+              <div class="countdown__digits countdown__digits--top">00</div>
+              <div
+                class="countdown__digits countdown__digits--center flip-card"
+              >
+                <span class="flip-card__bottom"> 00 </span>
+                <span class="flip-card__top"> 00 </span>
+              </div>
+              <div class="countdown__digits countdown__digits--bottom">00</div>
+            </div>
+            <div class="countdown__unit">hours</div>
+          </li>
+          <li class="countdown__time">
+            <div class="countdown__card" id="minutes">
+              <div class="countdown__digits countdown__digits--top">00</div>
+              <div
+                class="countdown__digits countdown__digits--center flip-card"
+              >
+                <span class="flip-card__bottom"> 00 </span>
+                <span class="flip-card__top"> 00 </span>
+              </div>
+              <div class="countdown__digits countdown__digits--bottom">00</div>
+            </div>
+            <div class="countdown__unit">minutes</div>
+          </li>
+          <li class="countdown__time">
+            <div class="countdown__card" id="seconds">
+              <div class="countdown__digits countdown__digits--top">00</div>
+              <div
+                class="countdown__digits countdown__digits--center flip-card"
+              >
+                <span class="flip-card__bottom"> 00 </span>
+                <span class="flip-card__top"> 00 </span>
+              </div>
+              <div class="countdown__digits countdown__digits--bottom">00</div>
+            </div>
+            <div class="countdown__unit">seconds</div>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__social">
+        <li class="footer__elem">
+          <a
+            rel="noopener"
+            href="https://facebook.com"
+            aria-label="Go to facebook"
+            target="_blank"
+          >
+            <svg class="footer__svg">
+              <use href="images/sprite.svg#facebook" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__elem">
+          <a
+            rel="noopener"
+            href="https://pinterest.com"
+            aria-label="Go to pinterest"
+            target="_blank"
+          >
+            <svg class="footer__svg">
+              <use href="images/sprite.svg#pinterest" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__elem">
+          <a
+            rel="noopener"
+            href="https://www.instagram.com/kuraunaito/"
+            aria-label="Go to @claudiabdm's instagram"
+            target="_blank"
+          >
+            <svg class="footer__svg">
+              <use href="images/sprite.svg#instagram" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="attribution">
+        Challenge by
+        <a
+          rel="noopener"
+          href="https://www.frontendmentor.io?ref=challenge"
+          aria-label="Go to Frontend Mentor"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          rel="noopener"
+          href="https://github.com/claudiabdm"
+          aria-label="Go to @claudiabdm's github"
+          >claudiabdm</a
+        >.
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

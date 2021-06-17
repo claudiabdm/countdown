@@ -1,0 +1,85 @@
+html,
+body {
+  @include size(100%, 100%);
+  min-height: 100%;
+}
+
+body {
+  @include flex(flex-start, space-between, column);
+  color: #000;
+  background: url("/images/bg-stars.svg") no-repeat 50% 10%,
+  linear-gradient(
+    180deg,
+    var(--neutral-300) 25%,
+    #241E2B 75%,
+  );
+  ;
+  font-size: var(--font-size-body);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+
+.main {
+  @include size(100%, 75vh);
+  @include flex(center, flex-start, column);
+  text-transform: uppercase;
+  &__title {
+    margin: var(--title-mt) 50px 0;
+    color: #fff;
+    font-size: var(--font-size-title);
+    text-align: center;
+    letter-spacing: var(--title-letter-spacing);
+  }
+  &__countdown {
+    @include size(100%, 100%);
+    padding: 0 22px;
+  }
+}
+
+.footer {
+  @include size(100%, 30vh);
+  @include flex(flex-end, center);
+  background: url("/images/pattern-hills.svg") no-repeat 80% 100% / auto 100%;
+
+  @media screen and (min-width: 768px) {
+    background-size: 100%;
+    background-position-x: 100%;
+  }
+  &__social {
+    @include size(100%, auto);
+    @include flex(center, center);
+    margin-bottom: 45px;
+    gap: 30px;
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 70px;
+    }
+  }
+  &__elem {
+    @include size(25px, 25px);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__svg {
+    @include size(100%, 100%);
+    fill: var(--primary-blue);
+    transition: fill 0.15s ease-out;
+    &:hover {
+      fill: var(--primary-red);
+    }
+  }
+}
+
+.attribution {
+  @include absolute(auto, auto, 5px, auto);
+  color: var(--primary-blue);
+  font-size: rem(12px);
+  font-weight: 400;
+  opacity: 0.5;
+  a {
+    color: var(--primary-blue);
+    &:hover {
+      color: var(--primary-red);
+    }
+  }
+}
