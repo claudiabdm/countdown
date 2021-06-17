@@ -7,13 +7,7 @@ body {
 body {
   @include flex(flex-start, space-between, column);
   color: #000;
-  background: url("/images/bg-stars.svg") no-repeat 50% 10%,
-  linear-gradient(
-    180deg,
-    var(--neutral-300) 25%,
-    #241E2B 75%,
-  );
-  ;
+  background: linear-gradient( 180deg, var(--neutral-300) 25%, #241E2B 75%);
   font-size: var(--font-size-body);
   font-family: var(--font-family);
   font-weight: var(--font-weight);
@@ -22,6 +16,7 @@ body {
 .main {
   @include size(100%, 75vh);
   @include flex(center, flex-start, column);
+  background: url("/images/bg-stars.svg") no-repeat 50% 10%;
   text-transform: uppercase;
   &__title {
     margin: var(--title-mt) 50px 0;
