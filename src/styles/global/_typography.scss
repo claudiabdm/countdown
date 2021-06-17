@@ -22,5 +22,6 @@ $title-letter-spacing: rem(5px);
     --font-size-digits: calc(#{$font-size-digits} * 2.25);
     --countdown-letter-spacing: calc(#{$countdown-letter-spacing} * 2.5);
     --title-letter-spacing: calc(#{$title-letter-spacing} * 1.75);
+    --font-size-title: calc(#{$font-size-title} * 1.15);
   }
 }

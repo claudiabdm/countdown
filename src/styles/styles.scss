@@ -66,6 +66,6 @@ $title-mt: rem(148px);
     --countdown-units-mt: calc(#{$countdown-units-mt} * 2.5);
     --countdown-border-radius: calc(#{$countdown-border-radius} * 2);
     --countdown-mt: calc(#{$countdown-mt} * 1.75);
-    --title-mt: calc(#{$title-mt} + 5px);
+    --title-mt: calc(#{$title-mt});
   }
 }
