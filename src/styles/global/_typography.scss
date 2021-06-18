@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap');
 
 $font-size-unit: rem(7px);
+$font-weight-unit: 500;
 $font-size-digits: rem(30px);
 $font-size-title: rem(18px);
 $countdown-letter-spacing: rem(2px);
@@ -10,6 +11,7 @@ $title-letter-spacing: rem(5px);
   --font-family: 'Red Hat Text';
   --font-weight: 700;
   --font-size-unit: #{$font-size-unit};
+  --font-weight-unit: #{$font-weight-unit};
   --font-size-digits: #{$font-size-digits};
   --font-size-title: #{$font-size-title};
   --countdown-letter-spacing: #{$countdown-letter-spacing};
@@ -19,6 +21,7 @@ $title-letter-spacing: rem(5px);
 @media screen and (min-width: 1024px) {
   :root {
     --font-size-unit: calc(#{$font-size-unit} * 2);
+    --font-weight-unit: 700;
     --font-size-digits: calc(#{$font-size-digits} * 2.25);
     --countdown-letter-spacing: calc(#{$countdown-letter-spacing} * 2.5);
     --title-letter-spacing: calc(#{$title-letter-spacing} * 1.75);

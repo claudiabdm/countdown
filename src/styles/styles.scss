@@ -51,20 +51,13 @@ $title-mt: rem(148px);
     --countdown-gap: calc(#{$countdown-gap} * 2);
     --countdown-units-mt: calc(#{$countdown-units-mt} * 2);
     --countdown-border-radius: calc(#{$countdown-border-radius} * 2);
-    --countdown-mt: calc(#{$countdown-mt});
-    --title-mt: calc(#{$title-mt});
   }
 }
 
 @media screen and (min-width: 1440px) {
   :root {
-    --card-size: calc(#{$card-size} * 2);
-    --card-points-size: calc(#{$card-points-size} * 2);
-    --card-points-top: calc(#{$card-points-top} * 2);
-    --card-points-offset: calc(#{$card-points-offset} * 2);
-    --countdown-gap: calc(#{$countdown-gap} * 2.5);
+    --countdown-gap: calc(#{$countdown-gap} * 2.25);
     --countdown-units-mt: calc(#{$countdown-units-mt} * 2.5);
-    --countdown-border-radius: calc(#{$countdown-border-radius} * 2);
     --countdown-mt: calc(#{$countdown-mt} * 1.75);
     --title-mt: calc(#{$title-mt} - 12px);
   }
