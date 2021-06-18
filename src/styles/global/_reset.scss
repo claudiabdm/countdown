@@ -63,3 +63,7 @@ button {
 textarea {
   -webkit-appearance: none;
 }
+
+a:focus-visible {
+	outline: var(--primary-red) solid 1px;
+}

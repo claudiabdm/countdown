@@ -6,10 +6,14 @@
   gap: var(--countdown-gap);
   margin-top: var(--countdown-mt);
 
+  &:focus-visible {
+    outline: var(--primary-red) solid 1px;
+  }
+
   &__unit {
     margin-top: var(--countdown-units-mt);
     font-size: var(--font-size-unit);
-    font-weight: 500;
+    font-weight: var(--font-weight-unit);
     letter-spacing: var(--countdown-letter-spacing);
   }
 

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,67 +26,62 @@
 
   </head>
 
-  <body>
-    <main class="main">
-      <h1 class="main__title">we're launching soon</h1>
-      <section class="main__countdown">
-        <ol
-          class="countdown"
-        >
-          <li class="countdown__time">
-            <div class="countdown__card" id="days">
-              <div class="countdown__digits countdown__digits--top">00</div>
-              <div
-                class="countdown__digits countdown__digits--center flip-card"
-              >
-                <span class="flip-card__bottom"> 00 </span>
-                <span class="flip-card__top"> 00 </span>
-              </div>
-              <div class="countdown__digits countdown__digits--bottom">00</div>
-            </div>
-            <div class="countdown__unit">days</div>
-          </li>
-          <li class="countdown__time">
-            <div class="countdown__card" id="hours">
-              <div class="countdown__digits countdown__digits--top">00</div>
-              <div
-                class="countdown__digits countdown__digits--center flip-card"
-              >
-                <span class="flip-card__bottom"> 00 </span>
-                <span class="flip-card__top"> 00 </span>
-              </div>
-              <div class="countdown__digits countdown__digits--bottom">00</div>
-            </div>
-            <div class="countdown__unit">hours</div>
-          </li>
-          <li class="countdown__time">
-            <div class="countdown__card" id="minutes">
-              <div class="countdown__digits countdown__digits--top">00</div>
-              <div
-                class="countdown__digits countdown__digits--center flip-card"
-              >
-                <span class="flip-card__bottom"> 00 </span>
-                <span class="flip-card__top"> 00 </span>
-              </div>
-              <div class="countdown__digits countdown__digits--bottom">00</div>
-            </div>
-            <div class="countdown__unit">minutes</div>
-          </li>
-          <li class="countdown__time">
-            <div class="countdown__card" id="seconds">
-              <div class="countdown__digits countdown__digits--top">00</div>
-              <div
-                class="countdown__digits countdown__digits--center flip-card"
-              >
-                <span class="flip-card__bottom"> 00 </span>
-                <span class="flip-card__top"> 00 </span>
-              </div>
-              <div class="countdown__digits countdown__digits--bottom">00</div>
-            </div>
-            <div class="countdown__unit">seconds</div>
-          </li>
-        </ol>
-      </section>
+	<body>
+		<main class="main">
+			<h1 class="main__title">we're launching soon</h1> 
+			<ol
+				id="countdown"
+				class="main__countdown countdown"
+				role="timer"
+				aria-live="polite"
+				aria-label="Time left to launch: loading"
+				tabindex="0"
+			>
+				<li class="countdown__time" aria-hidden="true">
+					<div class="countdown__card" id="days">
+						<div class="countdown__digits countdown__digits--top">00</div>
+						<div class="countdown__digits countdown__digits--center flip-card">
+							<span class="flip-card__bottom"> 00 </span>
+							<span class="flip-card__top"> 00 </span>
+						</div>
+						<div class="countdown__digits countdown__digits--bottom">00</div>
+					</div>
+					<div class="countdown__unit">days</div>
+				</li>
+				<li class="countdown__time" aria-hidden="true">
+					<div class="countdown__card" id="hours">
+						<div class="countdown__digits countdown__digits--top">00</div>
+						<div class="countdown__digits countdown__digits--center flip-card">
+							<span class="flip-card__bottom"> 00 </span>
+							<span class="flip-card__top"> 00 </span>
+						</div>
+						<div class="countdown__digits countdown__digits--bottom">00</div>
+					</div>
+					<div class="countdown__unit">hours</div>
+				</li>
+				<li class="countdown__time" aria-hidden="true">
+					<div class="countdown__card" id="minutes">
+						<div class="countdown__digits countdown__digits--top">00</div>
+						<div class="countdown__digits countdown__digits--center flip-card">
+							<span class="flip-card__bottom"> 00 </span>
+							<span class="flip-card__top"> 00 </span>
+						</div>
+						<div class="countdown__digits countdown__digits--bottom">00</div>
+					</div>
+					<div class="countdown__unit">minutes</div>
+				</li>
+				<li class="countdown__time" aria-hidden="true">
+					<div class="countdown__card" id="seconds">
+						<div class="countdown__digits countdown__digits--top">00</div>
+						<div class="countdown__digits countdown__digits--center flip-card">
+							<span class="flip-card__bottom"> 00 </span>
+							<span class="flip-card__top"> 00 </span>
+						</div>
+						<div class="countdown__digits countdown__digits--bottom">00</div>
+					</div>
+					<div class="countdown__unit">seconds</div>
+				</li>
+			</ol>
     </main>
     <footer class="footer">
       <ul class="footer__social">

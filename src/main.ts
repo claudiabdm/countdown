@@ -8,6 +8,7 @@ const countdown = getDate(
   new Date(new Date().getFullYear(), 8, 4, 0, 0, 10, 0)
 );
 
+
 // ------------ //
 // LOAD         //
 // ------------ //
@@ -17,12 +18,15 @@ let timer = 0;
 document.addEventListener(
   'DOMContentLoaded',
   () => {
+    const timerScreenReaderElem = document.querySelector('[role=timer]');
+    let { days, hours, minutes, seconds } = {days: 0, hours: 0, minutes: 0, seconds: 0};
     timer = setInterval(() => {
-      const { days, hours, minutes, seconds } = updateCountdown(Date.now());
+      ({ days, hours, minutes, seconds } = updateCountdown(Date.now()));
       updateSeconds(seconds);
       updateMinutes(minutes);
       updateHours(hours);
       updateDays(days);
+      timerScreenReaderElem?.setAttribute('aria-label', `Time left to launch: ${days} days ${hours} hours ${minutes} minutes`);
     }, 1000);
     const updateCountdown = calculateTimeLeft(countdown, timer);
   },
